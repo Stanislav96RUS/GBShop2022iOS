@@ -34,4 +34,5 @@ extension DataRequest {
         -> Self {
             let responseSerializer = CustomDecodableSerializer<T>(errorParser: errorParser)
             return response(queue: queue, responseSerializer: responseSerializer, completionHandler: completionHandler)
-            } }
+            }
+}

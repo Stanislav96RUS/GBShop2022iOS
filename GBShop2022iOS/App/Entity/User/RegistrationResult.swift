@@ -1,5 +1,5 @@
 //
-//  OutResult.swift
+//  RegistrationResult.swift
 //  GBShop2022iOS
 //
 //  Created by Stanislav on 04.08.2022.
@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct LogoutResult: Codable {
+struct RegistrationResult: Codable {
+    
     let result: Int
+    let userMessage: String
 }

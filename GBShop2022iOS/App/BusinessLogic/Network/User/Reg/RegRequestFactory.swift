@@ -10,6 +10,6 @@ import Alamofire
 
 protocol RegRequestFactory {
     func registration(idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: Int, bio: String, completionHandler: @escaping
-(AFDataResponse<RegistrationResult>) -> Void)
+    (AFDataResponse<RegistrationResult>) -> Void)
 }
 

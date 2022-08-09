@@ -7,31 +7,31 @@
 
 import Foundation
 import Alamofire
-    
-class Reg: AbstractRequestFactory {
-        let errorParser: AbstractErrorParser
-        let sessionManager: Session
-        let queue: DispatchQueue
-        let baseUrl = URL(string:
-"https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
 
-        init(
-            errorParser: AbstractErrorParser,
-            sessionManager: Session,
-            queue: DispatchQueue = DispatchQueue.global(qos: .utility)) {
+class Reg: AbstractRequestFactory {
+    let errorParser: AbstractErrorParser
+    let sessionManager: Session
+    let queue: DispatchQueue
+    let baseUrl = URL(string:
+                        "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    
+    init(
+        errorParser: AbstractErrorParser,
+        sessionManager: Session,
+        queue: DispatchQueue = DispatchQueue.global(qos: .utility)) {
             self.errorParser = errorParser
             self.sessionManager = sessionManager
             self.queue = queue
-    }
+        }
 }
 
 extension Reg: RegRequestFactory {
     func registration (idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: Int, bio: String, completionHandler: @escaping
-(AFDataResponse<RegistrationResult>) -> Void) {
+    (AFDataResponse<RegistrationResult>) -> Void) {
         let requestModel = Registration(baseUrl: baseUrl, login: userName, password: password, id: idUser,
-                                      email: email, gender: gender, creditcard: creditCard, bio: bio )
+                                        email: email, gender: gender, creditcard: creditCard, bio: bio )
         self.request(request: requestModel, completionHandler:
-completionHandler)
+                        completionHandler)
     }
 }
 

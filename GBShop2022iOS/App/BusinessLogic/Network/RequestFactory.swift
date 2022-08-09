@@ -20,7 +20,7 @@ class RequestFactory {
         configuration.headers = .default
         let manager = Session(configuration: configuration)
         return manager
-}()
+    }()
     
     let sessionQueue = DispatchQueue.global(qos: .utility)
     
@@ -43,4 +43,15 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return Reg(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    
+    func makeGetGBIRequestFatory() -> GetGBIRequestFactory {
+        let errorParser = makeErrorParser()
+        return GetGBI(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    
+    func makeCatalogRequestFatory() -> CatalogRequestFactory {
+        let errorParser = makeErrorParser()
+        return Catalog(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
+
