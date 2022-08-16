@@ -25,7 +25,7 @@ class RequestsTests: XCTestCase {
     var idProduct: Int!
     
     let expectation = XCTestExpectation(description: "Request")
-    let timeoutValu = 10.0
+    let timeoutValue = 10.0
     
     
     override func setUpWithError() throws {
@@ -72,7 +72,7 @@ class RequestsTests: XCTestCase {
             }
             self?.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: timeoutValu)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformRegRequest() {
@@ -87,7 +87,7 @@ class RequestsTests: XCTestCase {
             }
             self?.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: timeoutValu)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformLogoutRequest() {
@@ -102,7 +102,7 @@ class RequestsTests: XCTestCase {
             }
             self?.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: timeoutValu)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformChangeUDRequest() {
@@ -117,7 +117,7 @@ class RequestsTests: XCTestCase {
             }
             self?.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: timeoutValu)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     
@@ -133,7 +133,7 @@ class RequestsTests: XCTestCase {
             }
             self?.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: timeoutValu)
+        wait(for: [expectation], timeout: timeoutValue)
     }
     
     func testShouldPerformGetGBIRequest() {
@@ -148,6 +148,6 @@ class RequestsTests: XCTestCase {
             }
             self?.expectation.fulfill()
         }
-        wait(for: [expectation], timeout: timeoutValu)
+        wait(for: [expectation], timeout: timeoutValue)
     }
 }

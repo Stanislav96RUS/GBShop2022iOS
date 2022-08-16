@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 
 class Out: AbstractRequestFactory {
+    
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    let baseUrl = URL(string:
-                        "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: "https://stark-thicket-35171.herokuapp.com/")!
     
     init(
         errorParser: AbstractErrorParser,
@@ -26,23 +26,28 @@ class Out: AbstractRequestFactory {
 }
 
 extension Out: OutRequestFactory {
-    func logout(idUser: Int, completionHandler: @escaping
+    
+    func logout(id_user: Int, completionHandler: @escaping
     (AFDataResponse<LogoutResult>) -> Void) {
-        let requestModel = Logout(baseUrl: baseUrl, id: idUser)
+        let requestModel = Logout(baseUrl: baseUrl, id_user: id_user)
         self.request(request: requestModel, completionHandler:
                         completionHandler)
     }
 }
 
 extension Out {
+    
     struct Logout: RequestRouter {
+        
         let baseUrl: URL
-        let method: HTTPMethod = .get
+        let method: HTTPMethod = .post
         let path: String = "logout.json"
-        let id: Int
+        
+        let id_user: Int
+       
         var parameters: Parameters? {
             return [
-                "id_user": id
+                "id_user": id_user
             ]
         }
     }

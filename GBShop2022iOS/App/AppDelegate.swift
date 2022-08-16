@@ -16,10 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
                      launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //     MARK: авторизация
+            // MARK: авторизация
         
         let auth = requestFactory.makeAuthRequestFatory()
-        auth.login(userName: "Somebody", password: "mypassword") { response in
+        auth.login(id_user: 123, username: "Somebody",
+                   password: "mypassword") { response in
             switch response.result {
             case .success(let login):
                 print(login)
@@ -27,11 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
-        
-        // MARK: выход
-        
+//
+//        // MARK: выход
+//
         let out = requestFactory.makeOutRequestFatory()
-        out.logout(idUser: 123) { response in
+        out.logout(id_user: 123) { response in
             switch response.result {
             case .success(let logout):
                 print(logout)
@@ -39,11 +40,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
-        
-        // MARK: изменения личных данных
-        
+//
+//        // MARK: изменения личных данных
+//
         let ChangeUD = requestFactory.makeChangeUDRequestFatory()
-        ChangeUD.changeUserData(idUser: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: 9872389-2424-234224-234, bio: "This is good! I think I will switch to another language" ) { response in
+        ChangeUD.changeUserData(id_user: 123, username: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", credit_card: 9872389-2424-234224-234, bio: "This is good! I think I will switch to another language" ) { response in
             switch response.result {
             case .success(let changeUserData):
                 print(changeUserData)
@@ -53,9 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // MARK: регистрация
-        
+
         let reg = requestFactory.makeRegRequestFatory()
-        reg.registration(idUser: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: 9872389-2424-234224-234, bio: "This is good! I think I will switch to another language" ) { response in
+        reg.registration(id_user: 123, username: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", credit_card: 9872389-2424-234224-234, bio: "This is good! I think I will switch to another language") { response in
             switch response.result {
             case .success(let registration):
                 print(registration)
@@ -64,10 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        //     MARK: получение отдельного товара
-        
+//        //     MARK: получение отдельного товара
+//
         let GetGBI = requestFactory.makeGetGBIRequestFatory()
-        GetGBI.getGoodById(productName: "productname", productPrice: 123, productDescription: "productdescription") { response in
+        GetGBI.getGoodById(product_name: "product_name", product_price: 123, product_description: "productdescription") { response in
             switch response.result {
             case .success(let getGoodById):
                 print(getGoodById)
@@ -75,11 +76,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
-        
-        //     MARK: получение списка товаров
-        
+//
+//        //     MARK: получение списка товаров
+//
         let Catalog = requestFactory.makeCatalogRequestFatory()
-        Catalog.catalogData(pageNumber: 1, idCategory: 1) { response in
+        Catalog.catalogData(id_product: 1, page_number: 1) { response in
             switch response.result {
             case .success(let catalogData):
                 print(catalogData)

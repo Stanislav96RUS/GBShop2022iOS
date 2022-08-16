@@ -12,8 +12,7 @@ class ChangeUD: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    let baseUrl = URL(string:
-                        "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: "https://stark-thicket-35171.herokuapp.com/")!
     
     init(
         errorParser: AbstractErrorParser,
@@ -26,10 +25,17 @@ class ChangeUD: AbstractRequestFactory {
 }
 
 extension ChangeUD: ChangeUDRequestFactory {
-    func changeUserData(idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: Int, bio: String, completionHandler: @escaping
+    func changeUserData(id_user: Int,
+                        username: String,
+                        password: String,
+                        email: String,
+                        gender: String,
+                        credit_card: Int,
+                        bio: String,
+                        completionHandler: @escaping
     (AFDataResponse<ChangeUserDataResult>) -> Void) {
-        let requestModel = ChangeUserData(baseUrl: baseUrl, login: userName, password: password, id: idUser,
-                                          email: email, gender: gender, creditcard: creditCard, bio: bio )
+        let requestModel = ChangeUserData(baseUrl: baseUrl, id_user: id_user, username: username, password: password,
+                                          email: email, gender: gender, credit_card: credit_card, bio: bio )
         self.request(request: requestModel, completionHandler:
                         completionHandler)
     }
@@ -38,23 +44,25 @@ extension ChangeUD: ChangeUDRequestFactory {
 extension ChangeUD {
     struct ChangeUserData: RequestRouter {
         let baseUrl: URL
-        let method: HTTPMethod = .get
+        let method: HTTPMethod = .post
         let path: String = "changeUserData.json"
-        let login: String
+        
+        let id_user: Int
+        let username: String
         let password: String
-        let id: Int
         let email: String
         let gender: String
-        let creditcard: Int
+        let credit_card: Int
         let bio: String
+        
         var parameters: Parameters? {
             return [
-                "username": login,
+                "id_user": id_user,
+                "username": username,
                 "password": password,
-                "iduser": id,
                 "email": email,
                 "gender": gender,
-                "creditcard": creditcard,
+                "credit_card": credit_card,
                 "bio": bio,
                 
             ]

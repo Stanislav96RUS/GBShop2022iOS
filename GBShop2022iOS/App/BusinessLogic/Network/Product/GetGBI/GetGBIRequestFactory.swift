@@ -9,6 +9,9 @@ import Foundation
 import Alamofire
 
 protocol GetGBIRequestFactory {
-    func getGoodById(productName: String, productPrice: Int, productDescription: String, completionHandler: @escaping
+    func getGoodById(product_name: String,
+                     product_price: Int,
+                     product_description: String,
+                     completionHandler: @escaping
     (AFDataResponse<GetGoodByIdResult>) -> Void)
 }

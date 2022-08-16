@@ -12,8 +12,7 @@ class GetGBI: AbstractRequestFactory {
     let errorParser: AbstractErrorParser
     let sessionManager: Session
     let queue: DispatchQueue
-    let baseUrl = URL(string:
-                        "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/")!
+    let baseUrl = URL(string: "https://stark-thicket-35171.herokuapp.com/")!
     
     init(
         errorParser: AbstractErrorParser,
@@ -26,28 +25,35 @@ class GetGBI: AbstractRequestFactory {
 }
 
 extension GetGBI: GetGBIRequestFactory {
-    func getGoodById(productName: String, productPrice: Int, productDescription: String, completionHandler: @escaping
+    func getGoodById(product_name: String,
+                     product_price: Int,
+                     product_description: String,
+                     completionHandler: @escaping
     (AFDataResponse<GetGoodByIdResult>) -> Void) {
-        let requestModel = GetGoodById(baseUrl: baseUrl, productname: productName, productprice:
-                                                productPrice, productdescription: productDescription)
+        let requestModel = GetGoodById(baseUrl: baseUrl, product_name: product_name, product_price:
+                                        product_price, product_description: product_description)
         self.request(request: requestModel, completionHandler:
                         completionHandler)
     }
 }
 
 extension GetGBI {
+    
     struct GetGoodById: RequestRouter {
+        
         let baseUrl: URL
-        let method: HTTPMethod = .get
+        let method: HTTPMethod = .post
         let path: String = "getGoodById.json"
-        let productname: String
-        let productprice: Int
-        let productdescription: String
+        
+        let product_name: String
+        let product_price: Int
+        let product_description: String
+        
         var parameters: Parameters? {
             return [
-                "productname": productname,
-                "productprice": productprice,
-                "productdescription": productdescription
+                "product_name": product_name,
+                "product_price": product_price,
+                "product_description": product_description
             ]
         }
     }

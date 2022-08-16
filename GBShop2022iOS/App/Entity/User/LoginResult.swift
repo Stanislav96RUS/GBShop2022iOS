@@ -10,5 +10,7 @@ import Foundation
 struct LoginResult: Codable {
     
     let result: Int
-    let user: User
+    let id_user: Int?
+    let username: String?
+    let password: String?
 }

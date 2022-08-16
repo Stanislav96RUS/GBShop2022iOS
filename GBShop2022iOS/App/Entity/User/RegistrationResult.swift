@@ -10,5 +10,7 @@ import Foundation
 struct RegistrationResult: Codable {
     
     let result: Int
-    let userMessage: String
+    let user_message: String?
+    let error_message: String?
+    
 }
