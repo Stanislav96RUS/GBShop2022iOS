@@ -7,6 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
+=======
+		851F0A6E28AFC22F007AEFBE /* AddRev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A6D28AFC22F007AEFBE /* AddRev.swift */; };
+		851F0A7028AFC24C007AEFBE /* AddRevRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A6F28AFC24C007AEFBE /* AddRevRequestFactory.swift */; };
+		851F0A7228AFC25C007AEFBE /* GetListRev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7128AFC25C007AEFBE /* GetListRev.swift */; };
+		851F0A7428AFC271007AEFBE /* GetListRevRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7328AFC271007AEFBE /* GetListRevRequestFactory.swift */; };
+		851F0A7628AFC283007AEFBE /* DelRev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7528AFC283007AEFBE /* DelRev.swift */; };
+		851F0A7828AFC293007AEFBE /* DelRevRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7728AFC293007AEFBE /* DelRevRequestFactory.swift */; };
+		851F0A7A28AFC2D6007AEFBE /* AddRevResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7928AFC2D6007AEFBE /* AddRevResult.swift */; };
+		851F0A7C28AFC2E4007AEFBE /* GetListRevResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7B28AFC2E4007AEFBE /* GetListRevResult.swift */; };
+		851F0A7E28AFC2F4007AEFBE /* DelRevResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7D28AFC2F4007AEFBE /* DelRevResult.swift */; };
+		853B2D6B28A2AD7500B9FDA9 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853B2D6A28A2AD7500B9FDA9 /* RequestsTests.swift */; };
+		853DA0C328A29B5E00D17EEC /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853DA0C228A29B5E00D17EEC /* ResponseCodableTests.swift */; };
+		85775B4728A23724001A9AB6 /* GetGoodByIdResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85775B4628A23724001A9AB6 /* GetGoodByIdResult.swift */; };
+		85775B4928A238B6001A9AB6 /* GetGBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85775B4828A238B6001A9AB6 /* GetGBI.swift */; };
+		85775B4B28A23941001A9AB6 /* GetGBIRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85775B4A28A23941001A9AB6 /* GetGBIRequestFactory.swift */; };
+		85775B4D28A24180001A9AB6 /* CatalogDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85775B4C28A24180001A9AB6 /* CatalogDataResult.swift */; };
+		85775B4F28A242A7001A9AB6 /* CatalogRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85775B4E28A242A7001A9AB6 /* CatalogRequestFactory.swift */; };
+		85775B5128A242FA001A9AB6 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85775B5028A242FA001A9AB6 /* Catalog.swift */; };
+		85A81570289B774E0086EA39 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 85A8156F289B774E0086EA39 /* Alamofire */; };
+		85A81573289B77960086EA39 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81572289B77960086EA39 /* AbstractErrorParser.swift */; };
+		85A81575289B77D30086EA39 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81574289B77D30086EA39 /* ErrorParser.swift */; };
+		85A81577289B77FA0086EA39 /* CustomDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81576289B77FA0086EA39 /* CustomDecodableSerializer.swift */; };
+		85A81579289B79850086EA39 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81578289B79850086EA39 /* DataRequest.swift */; };
+		85A8157B289B7A1E0086EA39 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8157A289B7A1E0086EA39 /* RequestRouter.swift */; };
+		85A8157D289B7BC10086EA39 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8157C289B7BC10086EA39 /* LoginResult.swift */; };
+		85A8157F289B7BD20086EA39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8157E289B7BD20086EA39 /* User.swift */; };
+		85A81582289B7C490086EA39 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81581289B7C490086EA39 /* AuthRequestFactory.swift */; };
+		85A81584289B7CEC0086EA39 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81583289B7CEC0086EA39 /* Auth.swift */; };
+		85A81586289B7E520086EA39 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81585289B7E520086EA39 /* RequestFactory.swift */; };
+		85A81589289B89340086EA39 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81588289B89340086EA39 /* LogoutResult.swift */; };
+		85A8158D289B8AB50086EA39 /* OutRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8158C289B8AB50086EA39 /* OutRequestFactory.swift */; };
+		85A8158F289B8B470086EA39 /* Out.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8158E289B8B470086EA39 /* Out.swift */; };
+		85A81591289B97160086EA39 /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81590289B97150086EA39 /* ChangeUserDataResult.swift */; };
+		85A81593289B97640086EA39 /* ChangeUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81592289B97640086EA39 /* ChangeUD.swift */; };
+		85A81595289B99710086EA39 /* ChangeUDRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81594289B99710086EA39 /* ChangeUDRequestFactory.swift */; };
+		85A81597289BA3E40086EA39 /* RegistrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81596289BA3E40086EA39 /* RegistrationResult.swift */; };
+		85A81599289BA4980086EA39 /* Reg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A81598289BA4980086EA39 /* Reg.swift */; };
+		85A8159B289BA4B00086EA39 /* RegRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A8159A289BA4B00086EA39 /* RegRequestFactory.swift */; };
+>>>>>>> Stashed changes
 		85F9DDFD2898DDF0007AA0CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F9DDFC2898DDF0007AA0CF /* AppDelegate.swift */; };
 		85F9DE062898DDF2007AA0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F9DE052898DDF2007AA0CF /* Assets.xcassets */; };
 		85F9DE092898DDF2007AA0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F9DE072898DDF2007AA0CF /* LaunchScreen.storyboard */; };
@@ -33,6 +73,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
+=======
+		851F0A6D28AFC22F007AEFBE /* AddRev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRev.swift; sourceTree = "<group>"; };
+		851F0A6F28AFC24C007AEFBE /* AddRevRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRevRequestFactory.swift; sourceTree = "<group>"; };
+		851F0A7128AFC25C007AEFBE /* GetListRev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListRev.swift; sourceTree = "<group>"; };
+		851F0A7328AFC271007AEFBE /* GetListRevRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListRevRequestFactory.swift; sourceTree = "<group>"; };
+		851F0A7528AFC283007AEFBE /* DelRev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelRev.swift; sourceTree = "<group>"; };
+		851F0A7728AFC293007AEFBE /* DelRevRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelRevRequestFactory.swift; sourceTree = "<group>"; };
+		851F0A7928AFC2D6007AEFBE /* AddRevResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRevResult.swift; sourceTree = "<group>"; };
+		851F0A7B28AFC2E4007AEFBE /* GetListRevResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListRevResult.swift; sourceTree = "<group>"; };
+		851F0A7D28AFC2F4007AEFBE /* DelRevResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelRevResult.swift; sourceTree = "<group>"; };
+		853B2D6A28A2AD7500B9FDA9 /* RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTests.swift; sourceTree = "<group>"; };
+		853DA0C228A29B5E00D17EEC /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		85775B4628A23724001A9AB6 /* GetGoodByIdResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoodByIdResult.swift; sourceTree = "<group>"; };
+		85775B4828A238B6001A9AB6 /* GetGBI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGBI.swift; sourceTree = "<group>"; };
+		85775B4A28A23941001A9AB6 /* GetGBIRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGBIRequestFactory.swift; sourceTree = "<group>"; };
+		85775B4C28A24180001A9AB6 /* CatalogDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDataResult.swift; sourceTree = "<group>"; };
+		85775B4E28A242A7001A9AB6 /* CatalogRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRequestFactory.swift; sourceTree = "<group>"; };
+		85775B5028A242FA001A9AB6 /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		85A81572289B77960086EA39 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
+		85A81574289B77D30086EA39 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
+		85A81576289B77FA0086EA39 /* CustomDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecodableSerializer.swift; sourceTree = "<group>"; };
+		85A81578289B79850086EA39 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		85A8157A289B7A1E0086EA39 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		85A8157C289B7BC10086EA39 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		85A8157E289B7BD20086EA39 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		85A81581289B7C490086EA39 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		85A81583289B7CEC0086EA39 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		85A81585289B7E520086EA39 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		85A81588289B89340086EA39 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		85A8158C289B8AB50086EA39 /* OutRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutRequestFactory.swift; sourceTree = "<group>"; };
+		85A8158E289B8B470086EA39 /* Out.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Out.swift; sourceTree = "<group>"; };
+		85A81590289B97150086EA39 /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
+		85A81592289B97640086EA39 /* ChangeUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUD.swift; sourceTree = "<group>"; };
+		85A81594289B99710086EA39 /* ChangeUDRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUDRequestFactory.swift; sourceTree = "<group>"; };
+		85A81596289BA3E40086EA39 /* RegistrationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResult.swift; sourceTree = "<group>"; };
+		85A81598289BA4980086EA39 /* Reg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reg.swift; sourceTree = "<group>"; };
+		85A8159A289BA4B00086EA39 /* RegRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegRequestFactory.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		85F9DDF92898DDEF007AA0CF /* GBShop2022iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop2022iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F9DDFC2898DDF0007AA0CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85F9DE052898DDF2007AA0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +149,174 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< Updated upstream
+=======
+		851F0A6828AFC16A007AEFBE /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				851F0A7928AFC2D6007AEFBE /* AddRevResult.swift */,
+				851F0A7B28AFC2E4007AEFBE /* GetListRevResult.swift */,
+				851F0A7D28AFC2F4007AEFBE /* DelRevResult.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		851F0A6928AFC184007AEFBE /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				851F0A6C28AFC208007AEFBE /* AddRev */,
+				851F0A6B28AFC1F6007AEFBE /* GetRev */,
+				851F0A6A28AFC1E9007AEFBE /* DellRev */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		851F0A6A28AFC1E9007AEFBE /* DellRev */ = {
+			isa = PBXGroup;
+			children = (
+				851F0A7528AFC283007AEFBE /* DelRev.swift */,
+				851F0A7728AFC293007AEFBE /* DelRevRequestFactory.swift */,
+			);
+			path = DellRev;
+			sourceTree = "<group>";
+		};
+		851F0A6B28AFC1F6007AEFBE /* GetRev */ = {
+			isa = PBXGroup;
+			children = (
+				851F0A7128AFC25C007AEFBE /* GetListRev.swift */,
+				851F0A7328AFC271007AEFBE /* GetListRevRequestFactory.swift */,
+			);
+			path = GetRev;
+			sourceTree = "<group>";
+		};
+		851F0A6C28AFC208007AEFBE /* AddRev */ = {
+			isa = PBXGroup;
+			children = (
+				851F0A6D28AFC22F007AEFBE /* AddRev.swift */,
+				851F0A6F28AFC24C007AEFBE /* AddRevRequestFactory.swift */,
+			);
+			path = AddRev;
+			sourceTree = "<group>";
+		};
+		85775B5528A270C4001A9AB6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				85A81581289B7C490086EA39 /* AuthRequestFactory.swift */,
+				85A81583289B7CEC0086EA39 /* Auth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		85775B5628A270D7001A9AB6 /* Out */ = {
+			isa = PBXGroup;
+			children = (
+				85A8158C289B8AB50086EA39 /* OutRequestFactory.swift */,
+				85A8158E289B8B470086EA39 /* Out.swift */,
+			);
+			path = Out;
+			sourceTree = "<group>";
+		};
+		85775B5728A270ED001A9AB6 /* ChangeUD */ = {
+			isa = PBXGroup;
+			children = (
+				85A81594289B99710086EA39 /* ChangeUDRequestFactory.swift */,
+				85A81592289B97640086EA39 /* ChangeUD.swift */,
+			);
+			path = ChangeUD;
+			sourceTree = "<group>";
+		};
+		85775B5828A2711C001A9AB6 /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				85A81598289BA4980086EA39 /* Reg.swift */,
+				85A8159A289BA4B00086EA39 /* RegRequestFactory.swift */,
+			);
+			path = Reg;
+			sourceTree = "<group>";
+		};
+		85775B5928A27132001A9AB6 /* GetGBI */ = {
+			isa = PBXGroup;
+			children = (
+				85775B4828A238B6001A9AB6 /* GetGBI.swift */,
+				85775B4A28A23941001A9AB6 /* GetGBIRequestFactory.swift */,
+			);
+			path = GetGBI;
+			sourceTree = "<group>";
+		};
+		85775B5A28A27158001A9AB6 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				85775B5028A242FA001A9AB6 /* Catalog.swift */,
+				85775B4E28A242A7001A9AB6 /* CatalogRequestFactory.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		85775B5B28A27186001A9AB6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				85775B5528A270C4001A9AB6 /* Auth */,
+				85775B5628A270D7001A9AB6 /* Out */,
+				85775B5728A270ED001A9AB6 /* ChangeUD */,
+				85775B5828A2711C001A9AB6 /* Reg */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		85775B5C28A27199001A9AB6 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				85775B5928A27132001A9AB6 /* GetGBI */,
+				85775B5A28A27158001A9AB6 /* Catalog */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		85775B5D28A271B4001A9AB6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				85A8157C289B7BC10086EA39 /* LoginResult.swift */,
+				85A81588289B89340086EA39 /* LogoutResult.swift */,
+				85A81590289B97150086EA39 /* ChangeUserDataResult.swift */,
+				85A81596289BA3E40086EA39 /* RegistrationResult.swift */,
+				85A8157E289B7BD20086EA39 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		85775B5E28A271C0001A9AB6 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				85775B4628A23724001A9AB6 /* GetGoodByIdResult.swift */,
+				85775B4C28A24180001A9AB6 /* CatalogDataResult.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		85A81571289B77660086EA39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				85A81572289B77960086EA39 /* AbstractErrorParser.swift */,
+				85A81574289B77D30086EA39 /* ErrorParser.swift */,
+				85A81576289B77FA0086EA39 /* CustomDecodableSerializer.swift */,
+				85A81578289B79850086EA39 /* DataRequest.swift */,
+				85A8157A289B7A1E0086EA39 /* RequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		85A81580289B7C2F0086EA39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				851F0A6928AFC184007AEFBE /* Reviews */,
+				85775B5B28A27186001A9AB6 /* User */,
+				85775B5C28A27199001A9AB6 /* Product */,
+				85A81585289B7E520086EA39 /* RequestFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 		85F9DDF02898DDEF007AA0CF = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +387,12 @@
 		85F9DE2E2898DE71007AA0CF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
+=======
+				851F0A6828AFC16A007AEFBE /* Reviews */,
+				85775B5D28A271B4001A9AB6 /* User */,
+				85775B5E28A271C0001A9AB6 /* Product */,
+>>>>>>> Stashed changes
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -192,6 +445,7 @@
 				85F9DDF52898DDEF007AA0CF /* Sources */,
 				85F9DDF62898DDEF007AA0CF /* Frameworks */,
 				85F9DDF72898DDEF007AA0CF /* Resources */,
+				851F0A6728AF8E10007AEFBE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -307,12 +561,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		851F0A6728AF8E10007AEFBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#SwiftLint\n\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85F9DDF52898DDEF007AA0CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				85F9DDFD2898DDF0007AA0CF /* AppDelegate.swift in Sources */,
+=======
+				85775B4D28A24180001A9AB6 /* CatalogDataResult.swift in Sources */,
+				851F0A7C28AFC2E4007AEFBE /* GetListRevResult.swift in Sources */,
+				85775B4B28A23941001A9AB6 /* GetGBIRequestFactory.swift in Sources */,
+				85A81586289B7E520086EA39 /* RequestFactory.swift in Sources */,
+				85F9DDFD2898DDF0007AA0CF /* AppDelegate.swift in Sources */,
+				85A8157D289B7BC10086EA39 /* LoginResult.swift in Sources */,
+				851F0A7828AFC293007AEFBE /* DelRevRequestFactory.swift in Sources */,
+				85A81595289B99710086EA39 /* ChangeUDRequestFactory.swift in Sources */,
+				851F0A7628AFC283007AEFBE /* DelRev.swift in Sources */,
+				85A81593289B97640086EA39 /* ChangeUD.swift in Sources */,
+				85A81579289B79850086EA39 /* DataRequest.swift in Sources */,
+				85775B4728A23724001A9AB6 /* GetGoodByIdResult.swift in Sources */,
+				85775B5128A242FA001A9AB6 /* Catalog.swift in Sources */,
+				85A8158F289B8B470086EA39 /* Out.swift in Sources */,
+				85A8157B289B7A1E0086EA39 /* RequestRouter.swift in Sources */,
+				85A8157F289B7BD20086EA39 /* User.swift in Sources */,
+				85A81584289B7CEC0086EA39 /* Auth.swift in Sources */,
+				85A81582289B7C490086EA39 /* AuthRequestFactory.swift in Sources */,
+				851F0A6E28AFC22F007AEFBE /* AddRev.swift in Sources */,
+				851F0A7E28AFC2F4007AEFBE /* DelRevResult.swift in Sources */,
+				85A81575289B77D30086EA39 /* ErrorParser.swift in Sources */,
+				85A81589289B89340086EA39 /* LogoutResult.swift in Sources */,
+				85A8159B289BA4B00086EA39 /* RegRequestFactory.swift in Sources */,
+				85775B4928A238B6001A9AB6 /* GetGBI.swift in Sources */,
+				85A81573289B77960086EA39 /* AbstractErrorParser.swift in Sources */,
+				851F0A7A28AFC2D6007AEFBE /* AddRevResult.swift in Sources */,
+				85A8158D289B8AB50086EA39 /* OutRequestFactory.swift in Sources */,
+				85A81599289BA4980086EA39 /* Reg.swift in Sources */,
+				85A81597289BA3E40086EA39 /* RegistrationResult.swift in Sources */,
+				851F0A7028AFC24C007AEFBE /* AddRevRequestFactory.swift in Sources */,
+				85A81591289B97160086EA39 /* ChangeUserDataResult.swift in Sources */,
+				85A81577289B77FA0086EA39 /* CustomDecodableSerializer.swift in Sources */,
+				85775B4F28A242A7001A9AB6 /* CatalogRequestFactory.swift in Sources */,
+				851F0A7228AFC25C007AEFBE /* GetListRev.swift in Sources */,
+				851F0A7428AFC271007AEFBE /* GetListRevRequestFactory.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
