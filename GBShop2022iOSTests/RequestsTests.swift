@@ -11,6 +11,8 @@ import Alamofire
 
 class RequestsTests: XCTestCase {
     
+    // TODO: объединить в одну тестовую модель(например, создать TestsModel, там создавать тестовую структуру, а сюда только передавать эту структуру), это существенно сократит и количество переменных, и объем кода. А также добавит читаемость
+    
     var requestFactory: RequestFactory!
     var idUser: Int!
     var password: String!
@@ -60,9 +62,8 @@ class RequestsTests: XCTestCase {
     }
     
     func testShouldPerformAuthRequest() {
-        let factory = requestFactory.makeAuthRequestFatory()
-        factory.login(idUser: idUser, userName: userName, password: password) { [weak self] response in
-            
+        let auth = requestFactory.makeAuthRequestFatory()
+        auth.login(idUser: idUser, userName: userName, password: password) { [weak self] response in
             switch response.result {
             case .success(let result):
                 XCTAssertEqual(result.result, 1)
@@ -75,8 +76,8 @@ class RequestsTests: XCTestCase {
     }
     
     func testShouldPerformRegRequest() {
-        let factory = requestFactory.makeRegRequestFatory()
-        factory.registration(idUser: idUser,
+        let reg = requestFactory.makeRegRequestFatory()
+        reg.registration(idUser: idUser,
                              userName: userName,
                              password: password,
                              email: email,
@@ -93,11 +94,10 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformLogoutRequest() {
-        let factory = requestFactory.makeOutRequestFatory()
-        factory.logout(idUser: idUser) { [weak self] response in
-            
+        let logout = requestFactory.makeOutRequestFatory()
+        logout.logout(idUser: idUser) { [weak self] response in
             switch response.result {
             case .success(let result):
                 XCTAssertEqual(result.result, 1)
@@ -108,10 +108,10 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformChangeUDRequest() {
-        let factory = requestFactory.makeChangeUDRequestFatory()
-        factory.changeUserData(idUser: idUser,
+        let changeUD = requestFactory.makeChangeUDRequestFatory()
+        changeUD.changeUserData(idUser: idUser,
                                userName: userName,
                                password: password,
                                email: email,
@@ -128,13 +128,12 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformCatalogRequest() {
-        let factory = requestFactory.makeCatalogRequestFatory()
-        factory.catalogData(idProduct: idProduct,
+        let catalog = requestFactory.makeCatalogRequestFatory()
+        catalog.catalogData(idProduct: idProduct,
                             pageNumber: pageNumber
         ) { [weak self] response in
-            
             switch response.result {
             case .success(let result):
                 XCTAssertEqual(result[0].result, 1)
@@ -145,10 +144,10 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformGetGBIRequest() {
-        let factory = requestFactory.makeGetGBIRequestFatory()
-        factory.getGoodById(productName: "notebook",
+        let getGBI = requestFactory.makeGetGBIRequestFatory()
+        getGBI.getGoodById(productName: "notebook",
                             productPrice: 49499,
                             productDescription: "good") { [weak self] response in
             switch response.result {
@@ -161,7 +160,7 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformDelRevRequest() {
         let delRev = requestFactory.makeDelRevRequestFatory()
         delRev.delRev(idProduct: 123, idReview: 127) { response in
@@ -175,7 +174,7 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformAddRevRequest() {
         let addRev = requestFactory.makeAddRevRequestFatory()
         addRev.addRev(idProduct: 127, idUser: 123, textReview: "отзыв о товаре 127") { response in
@@ -189,7 +188,7 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-    
+
     func testShouldPerformGetListRevRequest() {
         let getListRev = requestFactory.makeGetListRevRequestFatory()
         getListRev.getListRev(idProduct: 127) { response in
@@ -203,5 +202,47 @@ class RequestsTests: XCTestCase {
         }
         wait(for: [expectation], timeout: timeoutValue)
     }
-}
-
+    
+    func testShouldPerformAddBasketRequest() {
+        let addBasket = requestFactory.makeAddBasketRequestFatory()
+        addBasket.addBasket(idProduct: 127, idUser: 123) { response in
+            switch response.result {
+            case .success(let result):
+                XCTAssertEqual(result.result, 1)
+            case .failure:
+                XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+        }
+        
+    func testShouldPerformDelBasketRequest() {
+        let delBasket = requestFactory.makeDelBasketRequestFatory()
+        delBasket.delBasket(idProduct: 127, idUser: 123) { response in
+            switch response.result {
+            case .success(let result):
+                XCTAssertEqual(result.result, 1)
+            case .failure:
+                XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+        }
+        
+    func testShouldPerformPayBasketRequest() {
+        let payBasket = requestFactory.makePayBasketRequestFatory()
+        payBasket.payBasket(idProduct: 127, idUser: 123, sumProductPrice: 90000 ) { response in
+            switch response.result {
+            case .success(let result):
+                XCTAssertEqual(result.result, 1)
+            case .failure:
+                XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: timeoutValue)
+            
+        }
+    }

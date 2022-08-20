@@ -63,10 +63,24 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return AddRev(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
-    
+
     func makeDelRevRequestFatory() -> DelRevRequestFactory {
         let errorParser = makeErrorParser()
         return DelRev(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
 
+    func makeAddBasketRequestFatory() -> AddBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return AddBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    
+    func makeDelBasketRequestFatory() -> DelBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return DelBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+
+    func makePayBasketRequestFatory() -> PayBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return PayBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
