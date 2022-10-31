@@ -5,28 +5,34 @@
 //  Created by Stanislav on 02.08.2022.
 //
 
-import UIKit
+import SwiftUI
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
 
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     var window: UIWindow?
     let requestFactory = RequestFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
                      launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = UIHostingController(rootView: MainView())
+        self.window = window
+        window.makeKeyAndVisible()
+    
 //        // MARK: авторизация
-//        let auth = requestFactory.makeAuthRequestFatory()
-//        auth.login(idUser: 123, userName: "Somebody",
-//                   password: "mypassword") { response in
-//            switch response.result {
-//            case .success(let login):
-//                print(login)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
+        let auth = requestFactory.makeAuthRequestFatory()
+        auth.login(idUser: 1234, userName: "Somebody",
+                   password: "mypassword") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
 //        // MARK: выход
 //        let out = requestFactory.makeOutRequestFatory()
 //        out.logout(idUser: 123) { response in
@@ -121,36 +127,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print(error.localizedDescription)
 //            }
 //        }
-        // MARK: добавление товара в корзину
-        let addBasket = requestFactory.makeAddBasketRequestFatory()
-        addBasket.addBasket(idProduct: 127, idUser: 123) { response in
-            switch response.result {
-            case .success(let addBasket):
-                print(addBasket)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        // MARK: удаление товара из корзины
-        let delBasket = requestFactory.makeDelBasketRequestFatory()
-        delBasket.delBasket(idProduct: 127, idUser: 123) { response in
-            switch response.result {
-            case .success(let delBasket):
-                print(delBasket)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-        // MARK: покупка товара из корзины
-        let payBasket = requestFactory.makePayBasketRequestFatory()
-        payBasket.payBasket(idProduct: 127, idUser: 123, sumProductPrice: 90000 ) { response in
-            switch response.result {
-            case .success(let payBasket):
-                print(payBasket)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
+//        // MARK: добавление товара в корзину
+//        let addBasket = requestFactory.makeAddBasketRequestFatory()
+//        addBasket.addBasket(idProduct: 127, idUser: 123) { response in
+//            switch response.result {
+//            case .success(let addBasket):
+//                print(addBasket)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+//        // MARK: удаление товара из корзины
+//        let delBasket = requestFactory.makeDelBasketRequestFatory()
+//        delBasket.delBasket(idProduct: 127, idUser: 123) { response in
+//            switch response.result {
+//            case .success(let delBasket):
+//                print(delBasket)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+//        // MARK: покупка товара из корзины
+//        let payBasket = requestFactory.makePayBasketRequestFatory()
+//        payBasket.payBasket(idProduct: 127, idUser: 123, sumProductPrice: 90000 ) { response in
+//            switch response.result {
+//            case .success(let payBasket):
+//                print(payBasket)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
         return true
     }
 

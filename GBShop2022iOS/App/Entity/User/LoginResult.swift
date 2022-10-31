@@ -14,3 +14,4 @@ struct LoginResult: Codable {
     let userName: String
     let password: String
 }
+

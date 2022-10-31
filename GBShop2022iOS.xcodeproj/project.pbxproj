@@ -10,6 +10,9 @@
 		851F0A7A28AFC2D6007AEFBE /* AddRevResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7928AFC2D6007AEFBE /* AddRevResult.swift */; };
 		851F0A7C28AFC2E4007AEFBE /* GetListRevResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7B28AFC2E4007AEFBE /* GetListRevResult.swift */; };
 		851F0A7E28AFC2F4007AEFBE /* DelRevResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F0A7D28AFC2F4007AEFBE /* DelRevResult.swift */; };
+		85552DEA290FAA9500D9648C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85552DE9290FAA9500D9648C /* RegistrationView.swift */; };
+		85552DEC290FAC9700D9648C /* RegSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85552DEB290FAC9700D9648C /* RegSuccessView.swift */; };
+		85552DEE290FCC9E00D9648C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85552DED290FCC9E00D9648C /* ProfileView.swift */; };
 		85753A3628B0FF35009F9C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F9DDFC2898DDF0007AA0CF /* AppDelegate.swift */; };
 		85753A3928B100B9009F9C78 /* AddBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85753A3828B100B9009F9C78 /* AddBasketResult.swift */; };
 		85753A3B28B100D0009F9C78 /* DelBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85753A3A28B100D0009F9C78 /* DelBasketResult.swift */; };
@@ -54,6 +57,14 @@
 		85BD205E28B0FB85009F3C09 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD205C28B0FB85009F3C09 /* ResponseCodableTests.swift */; };
 		85BD205F28B0FB85009F3C09 /* RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD205D28B0FB85009F3C09 /* RequestsTests.swift */; };
 		85BD206228B0FBAB009F3C09 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 85BD206128B0FBAB009F3C09 /* Alamofire */; };
+		85E50DA328C0C94C0020A441 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DA228C0C94C0020A441 /* MainView.swift */; };
+		85E50DA528C0C9830020A441 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DA428C0C9830020A441 /* UserView.swift */; };
+		85E50DA728C0C9B00020A441 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DA628C0C9B00020A441 /* AuthView.swift */; };
+		85E50DA928C0CA280020A441 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DA828C0CA280020A441 /* BasketView.swift */; };
+		85E50DAB28C0CA7F0020A441 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAA28C0CA7F0020A441 /* ShopView.swift */; };
+		85E50DAD28C0CAB30020A441 /* FriendCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAC28C0CAB30020A441 /* FriendCellView.swift */; };
+		85E50DAF28C0CAE60020A441 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAE28C0CAE60020A441 /* FriendModel.swift */; };
+		85E50DB128C0CB130020A441 /* FotoFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DB028C0CB130020A441 /* FotoFriendView.swift */; };
 		85F9DE062898DDF2007AA0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F9DE052898DDF2007AA0CF /* Assets.xcassets */; };
 		85F9DE092898DDF2007AA0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F9DE072898DDF2007AA0CF /* LaunchScreen.storyboard */; };
 		85F9DE142898DDF2007AA0CF /* GBShop2022iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F9DE132898DDF2007AA0CF /* GBShop2022iOSTests.swift */; };
@@ -82,6 +93,9 @@
 		851F0A7928AFC2D6007AEFBE /* AddRevResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRevResult.swift; sourceTree = "<group>"; };
 		851F0A7B28AFC2E4007AEFBE /* GetListRevResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListRevResult.swift; sourceTree = "<group>"; };
 		851F0A7D28AFC2F4007AEFBE /* DelRevResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelRevResult.swift; sourceTree = "<group>"; };
+		85552DE9290FAA9500D9648C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		85552DEB290FAC9700D9648C /* RegSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegSuccessView.swift; sourceTree = "<group>"; };
+		85552DED290FCC9E00D9648C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		85753A3828B100B9009F9C78 /* AddBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBasketResult.swift; sourceTree = "<group>"; };
 		85753A3A28B100D0009F9C78 /* DelBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelBasketResult.swift; sourceTree = "<group>"; };
 		85753A3C28B100E9009F9C78 /* PayBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasketResult.swift; sourceTree = "<group>"; };
@@ -127,6 +141,14 @@
 		85BD206328B0FBE7009F3C09 /* GBShop2022iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop2022iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BD206428B0FBE7009F3C09 /* GBShop2022iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShop2022iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BD206528B0FBE7009F3C09 /* GBShop2022iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShop2022iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E50DA228C0C94C0020A441 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		85E50DA428C0C9830020A441 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		85E50DA628C0C9B00020A441 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		85E50DA828C0CA280020A441 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		85E50DAA28C0CA7F0020A441 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		85E50DAC28C0CAB30020A441 /* FriendCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCellView.swift; sourceTree = "<group>"; };
+		85E50DAE28C0CAE60020A441 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		85E50DB028C0CB130020A441 /* FotoFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendView.swift; sourceTree = "<group>"; };
 		85F9DDFC2898DDF0007AA0CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85F9DE052898DDF2007AA0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85F9DE082898DDF2007AA0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -246,7 +268,6 @@
 				85753A3E28B100F3009F9C78 /* Basket */,
 				85BD201828B0FAD1009F3C09 /* User */,
 				85BD202528B0FAD1009F3C09 /* Product */,
-				85BD202C28B0FAD1009F3C09 /* RequestFactory.swift */,
 				85BD202D28B0FAD1009F3C09 /* Reviews */,
 			);
 			path = Network;
@@ -421,7 +442,19 @@
 			isa = PBXGroup;
 			children = (
 				85F9DDFC2898DDF0007AA0CF /* AppDelegate.swift */,
+				85E50DA228C0C94C0020A441 /* MainView.swift */,
+				85E50DA428C0C9830020A441 /* UserView.swift */,
+				85E50DAA28C0CA7F0020A441 /* ShopView.swift */,
+				85E50DA628C0C9B00020A441 /* AuthView.swift */,
+				85E50DA828C0CA280020A441 /* BasketView.swift */,
+				85552DE9290FAA9500D9648C /* RegistrationView.swift */,
+				85552DEB290FAC9700D9648C /* RegSuccessView.swift */,
+				85552DED290FCC9E00D9648C /* ProfileView.swift */,
+				85E50DAC28C0CAB30020A441 /* FriendCellView.swift */,
+				85E50DAE28C0CAE60020A441 /* FriendModel.swift */,
+				85E50DB028C0CB130020A441 /* FotoFriendView.swift */,
 				85F9DE2D2898DE50007AA0CF /* BusinessLogic */,
+				85BD202C28B0FAD1009F3C09 /* RequestFactory.swift */,
 				85F9DE2E2898DE71007AA0CF /* Entity */,
 				85F9DE2F2898DE7F007AA0CF /* Assembly */,
 				85F9DE302898DE8D007AA0CF /* Flows */,
@@ -644,6 +677,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E50DA928C0CA280020A441 /* BasketView.swift in Sources */,
+				85552DEA290FAA9500D9648C /* RegistrationView.swift in Sources */,
 				85753A3628B0FF35009F9C78 /* AppDelegate.swift in Sources */,
 				85BD204228B0FAD1009F3C09 /* GetGBI.swift in Sources */,
 				85775B4D28A24180001A9AB6 /* CatalogDataResult.swift in Sources */,
@@ -652,6 +687,7 @@
 				851F0A7C28AFC2E4007AEFBE /* GetListRevResult.swift in Sources */,
 				85BD203F28B0FAD1009F3C09 /* CatalogRequestFactory.swift in Sources */,
 				85A8157D289B7BC10086EA39 /* LoginResult.swift in Sources */,
+				85E50DAB28C0CA7F0020A441 /* ShopView.swift in Sources */,
 				85BD204128B0FAD1009F3C09 /* GetGBIRequestFactory.swift in Sources */,
 				85BD204528B0FAD1009F3C09 /* GetListRevRequestFactory.swift in Sources */,
 				85BD203D28B0FAD1009F3C09 /* Auth.swift in Sources */,
@@ -667,20 +703,28 @@
 				85BD203A28B0FAD1009F3C09 /* ChangeUD.swift in Sources */,
 				85753A4F28B10524009F9C78 /* PayBasketRequestFactory.swift in Sources */,
 				85BD203728B0FAD1009F3C09 /* Reg.swift in Sources */,
+				85E50DAD28C0CAB30020A441 /* FriendCellView.swift in Sources */,
 				851F0A7E28AFC2F4007AEFBE /* DelRevResult.swift in Sources */,
+				85552DEC290FAC9700D9648C /* RegSuccessView.swift in Sources */,
 				85BD204328B0FAD1009F3C09 /* RequestFactory.swift in Sources */,
+				85E50DA728C0C9B00020A441 /* AuthView.swift in Sources */,
 				85A81589289B89340086EA39 /* LogoutResult.swift in Sources */,
+				85E50DB128C0CB130020A441 /* FotoFriendView.swift in Sources */,
 				85BD204028B0FAD1009F3C09 /* Catalog.swift in Sources */,
+				85E50DA528C0C9830020A441 /* UserView.swift in Sources */,
 				85753A3B28B100D0009F9C78 /* DelBasketResult.swift in Sources */,
+				85E50DA328C0C94C0020A441 /* MainView.swift in Sources */,
 				851F0A7A28AFC2D6007AEFBE /* AddRevResult.swift in Sources */,
 				85BD205328B0FB2A009F3C09 /* ErrorParser.swift in Sources */,
 				85BD204E28B0FAEB009F3C09 /* RequestRouter.swift in Sources */,
 				85753A3928B100B9009F9C78 /* AddBasketResult.swift in Sources */,
+				85552DEE290FCC9E00D9648C /* ProfileView.swift in Sources */,
 				85BD205428B0FB2A009F3C09 /* AbstractErrorParser.swift in Sources */,
 				85753A3D28B100E9009F9C78 /* PayBasketResult.swift in Sources */,
 				85BD205028B0FAEB009F3C09 /* CustomDecodableSerializer.swift in Sources */,
 				85BD204828B0FAD1009F3C09 /* DelRev.swift in Sources */,
 				85BD203828B0FAD1009F3C09 /* RegRequestFactory.swift in Sources */,
+				85E50DAF28C0CAE60020A441 /* FriendModel.swift in Sources */,
 				85753A4D28B1050E009F9C78 /* PayBasket.swift in Sources */,
 				85BD203B28B0FAD1009F3C09 /* Out.swift in Sources */,
 				85BD204628B0FAD1009F3C09 /* AddRevRequestFactory.swift in Sources */,
@@ -858,6 +902,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GBShop2022iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -884,6 +929,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GBShop2022iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -910,6 +956,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -929,6 +976,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -947,6 +995,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.GBShop2022iOSUITests";
@@ -964,6 +1013,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 323JAZVTZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.GBShop2022iOSUITests";
