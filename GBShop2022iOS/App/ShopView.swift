@@ -1,39 +1,39 @@
-////
-////  ShopView.swift
-////  GBShop2022iOS
-////
-////  Created by Stanislav on 01.09.2022.
-////
 //
-//import SwiftUI
+//  ShopView.swift
+//  GBShop2022iOS
 //
-//struct ShopView: View {
-//   
-//    @State private var friends: [Friend] = [
-//        Friend(name: "Dmitriy", imageName: "avatar"),
-//        Friend(name: "Igor", imageName: "avatar"),
-//        Friend(name: "Stan", imageName: "avatar"),
-//        Friend(name: "Alex", imageName: "avatar"),
-//        
-//    ]
-//    
-//    var body: some View {
-//        
-//        List(friends.sorted(by: { $0.name < $1.name })) { friend in
-//            NavigationLink(destination: FotoFriendView(friend: friend)) {
-//                FriendCellView(friend: friend)
-//            }
-//            
-//        }
-//        
-//        .listStyle(GroupedListStyle())
-//        .navigationBarTitle("Друзья", displayMode: .inline)
-//            
-//    }
-//}
+//  Created by Stanislav on 01.09.2022.
 //
-//struct ShopView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ShopView()
-//    }
-//}
+
+import SwiftUI
+
+struct ShopView: View {
+   
+    @State private var products: [Product] = [
+        Product(name: "Notebook", imageName: "nophoto"),
+        Product(name: "Camera", imageName: "nophoto"),
+        Product(name: "Mouse", imageName: "nophoto"),
+        Product(name: "Smartphone", imageName: "nophoto"),
+        
+    ]
+    
+    var body: some View {
+        
+        List(products.sorted(by: { $0.name < $1.name })) { product in
+            NavigationLink(destination: PhotoProductView(product: product)) {
+                ProductCellView(product: product)
+            }
+            
+        }
+        
+        .listStyle(GroupedListStyle())
+        .navigationBarTitle("GBShop2022iOS", displayMode: .inline)
+            
+    }
+}
+
+struct ShopView_Previews: PreviewProvider {
+    static var previews: some View {
+        ShopView()
+    }
+}

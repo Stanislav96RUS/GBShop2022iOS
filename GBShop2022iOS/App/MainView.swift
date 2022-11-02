@@ -28,7 +28,7 @@ struct MainView: View {
                 case 0:
                     UserView()
                 case 1:
-                    BasketView()
+                    ShopView()
                 case 2:
                     NavigationView {
                         VStack{

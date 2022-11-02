@@ -62,9 +62,9 @@
 		85E50DA728C0C9B00020A441 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DA628C0C9B00020A441 /* AuthView.swift */; };
 		85E50DA928C0CA280020A441 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DA828C0CA280020A441 /* BasketView.swift */; };
 		85E50DAB28C0CA7F0020A441 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAA28C0CA7F0020A441 /* ShopView.swift */; };
-		85E50DAD28C0CAB30020A441 /* FriendCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAC28C0CAB30020A441 /* FriendCellView.swift */; };
-		85E50DAF28C0CAE60020A441 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAE28C0CAE60020A441 /* FriendModel.swift */; };
-		85E50DB128C0CB130020A441 /* FotoFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DB028C0CB130020A441 /* FotoFriendView.swift */; };
+		85E50DAD28C0CAB30020A441 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAC28C0CAB30020A441 /* ProductCellView.swift */; };
+		85E50DAF28C0CAE60020A441 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DAE28C0CAE60020A441 /* ProductModel.swift */; };
+		85E50DB128C0CB130020A441 /* PhotoProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E50DB028C0CB130020A441 /* PhotoProductView.swift */; };
 		85F9DE062898DDF2007AA0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F9DE052898DDF2007AA0CF /* Assets.xcassets */; };
 		85F9DE092898DDF2007AA0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F9DE072898DDF2007AA0CF /* LaunchScreen.storyboard */; };
 		85F9DE142898DDF2007AA0CF /* GBShop2022iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F9DE132898DDF2007AA0CF /* GBShop2022iOSTests.swift */; };
@@ -146,9 +146,9 @@
 		85E50DA628C0C9B00020A441 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		85E50DA828C0CA280020A441 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 		85E50DAA28C0CA7F0020A441 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
-		85E50DAC28C0CAB30020A441 /* FriendCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCellView.swift; sourceTree = "<group>"; };
-		85E50DAE28C0CAE60020A441 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
-		85E50DB028C0CB130020A441 /* FotoFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendView.swift; sourceTree = "<group>"; };
+		85E50DAC28C0CAB30020A441 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		85E50DAE28C0CAE60020A441 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		85E50DB028C0CB130020A441 /* PhotoProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProductView.swift; sourceTree = "<group>"; };
 		85F9DDFC2898DDF0007AA0CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85F9DE052898DDF2007AA0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85F9DE082898DDF2007AA0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -445,14 +445,14 @@
 				85E50DA228C0C94C0020A441 /* MainView.swift */,
 				85E50DA428C0C9830020A441 /* UserView.swift */,
 				85E50DAA28C0CA7F0020A441 /* ShopView.swift */,
+				85E50DAC28C0CAB30020A441 /* ProductCellView.swift */,
+				85E50DAE28C0CAE60020A441 /* ProductModel.swift */,
 				85E50DA628C0C9B00020A441 /* AuthView.swift */,
 				85E50DA828C0CA280020A441 /* BasketView.swift */,
 				85552DE9290FAA9500D9648C /* RegistrationView.swift */,
 				85552DEB290FAC9700D9648C /* RegSuccessView.swift */,
 				85552DED290FCC9E00D9648C /* ProfileView.swift */,
-				85E50DAC28C0CAB30020A441 /* FriendCellView.swift */,
-				85E50DAE28C0CAE60020A441 /* FriendModel.swift */,
-				85E50DB028C0CB130020A441 /* FotoFriendView.swift */,
+				85E50DB028C0CB130020A441 /* PhotoProductView.swift */,
 				85F9DE2D2898DE50007AA0CF /* BusinessLogic */,
 				85BD202C28B0FAD1009F3C09 /* RequestFactory.swift */,
 				85F9DE2E2898DE71007AA0CF /* Entity */,
@@ -703,13 +703,13 @@
 				85BD203A28B0FAD1009F3C09 /* ChangeUD.swift in Sources */,
 				85753A4F28B10524009F9C78 /* PayBasketRequestFactory.swift in Sources */,
 				85BD203728B0FAD1009F3C09 /* Reg.swift in Sources */,
-				85E50DAD28C0CAB30020A441 /* FriendCellView.swift in Sources */,
+				85E50DAD28C0CAB30020A441 /* ProductCellView.swift in Sources */,
 				851F0A7E28AFC2F4007AEFBE /* DelRevResult.swift in Sources */,
 				85552DEC290FAC9700D9648C /* RegSuccessView.swift in Sources */,
 				85BD204328B0FAD1009F3C09 /* RequestFactory.swift in Sources */,
 				85E50DA728C0C9B00020A441 /* AuthView.swift in Sources */,
 				85A81589289B89340086EA39 /* LogoutResult.swift in Sources */,
-				85E50DB128C0CB130020A441 /* FotoFriendView.swift in Sources */,
+				85E50DB128C0CB130020A441 /* PhotoProductView.swift in Sources */,
 				85BD204028B0FAD1009F3C09 /* Catalog.swift in Sources */,
 				85E50DA528C0C9830020A441 /* UserView.swift in Sources */,
 				85753A3B28B100D0009F9C78 /* DelBasketResult.swift in Sources */,
@@ -724,7 +724,7 @@
 				85BD205028B0FAEB009F3C09 /* CustomDecodableSerializer.swift in Sources */,
 				85BD204828B0FAD1009F3C09 /* DelRev.swift in Sources */,
 				85BD203828B0FAD1009F3C09 /* RegRequestFactory.swift in Sources */,
-				85E50DAF28C0CAE60020A441 /* FriendModel.swift in Sources */,
+				85E50DAF28C0CAE60020A441 /* ProductModel.swift in Sources */,
 				85753A4D28B1050E009F9C78 /* PayBasket.swift in Sources */,
 				85BD203B28B0FAD1009F3C09 /* Out.swift in Sources */,
 				85BD204628B0FAD1009F3C09 /* AddRevRequestFactory.swift in Sources */,
