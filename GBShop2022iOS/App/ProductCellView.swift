@@ -18,11 +18,9 @@ struct ProductCellView: View {
             Image(product.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80, alignment: .leading)
-            
+                .frame(width: 100, height: 100, alignment: .leading)
             Text("\(product.name)")
-            
-        }.foregroundColor(Color.blue)
+        }
 }
 
 }
