@@ -30,18 +30,19 @@ struct MainView: View {
                 case 1:
                     ShopView()
                 case 2:
-                    NavigationView {
-                        VStack{
-                            Image("ShoppingBasket")
-                                .renderingMode(.template)
-                                .resizable()
-                                .foregroundColor(Color.black)
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 200.0, height: 200.0)
-                            Text("Ваша корзина пуста!")
-                                .frame(width: 300.0, height: 50.0)
-                        }
-                    }
+                    BasketView()
+//                    NavigationView {
+//                        VStack{
+//                            Image("ShoppingBasket")
+//                                .renderingMode(.template)
+//                                .resizable()
+//                                .foregroundColor(Color.black)
+//                                .aspectRatio(contentMode: .fill)
+//                                .frame(width: 200.0, height: 200.0)
+//                            Text("Ваша корзина пуста!")
+//                                .frame(width: 300.0, height: 50.0)
+//                        }
+//                    }
                 default:
                     NavigationView {
                         Text("Что нибудь, когда нибудь еще .....")

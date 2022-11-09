@@ -15,12 +15,20 @@ struct ProductCellView: View {
     var body: some View {
         
         HStack {
-            Image(product.imageName)
+            Image(product.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100, height: 100, alignment: .leading)
             Text("\(product.name)")
+            Text("\(product.price)₽")
         }
+    }
+    
 }
 
+struct ProductCellView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProductCellView(product: productList[2])
+//            .environmentObject(CartManager())
+    }
 }
