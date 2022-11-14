@@ -57,6 +57,18 @@ struct PhotoProductCell: View {
                     }
                 }
                 .frame(maxWidth: 370)
+                .background(Color.green)
+                .cornerRadius(7)
+                Spacer()
+                
+                HStack {
+                    Button("Не нажимать!") {
+                        fatalError("Crash was triggered")
+                    }
+                    .frame(width: 370.0, height: 68.0)
+                    .foregroundColor(Color.white)
+                }
+                .frame(maxWidth: 370)
                 .background(Color.red)
                 .cornerRadius(7)
                 Spacer()

@@ -103,6 +103,7 @@ struct AuthView: View {
                             .padding(.leading, 10.0)
                             .frame(width: 370.0, height: 40.0)
                         Spacer()
+                        
                     }
                     .padding(.top, 100.0)
                     
